@@ -55,8 +55,8 @@ void LoginDialog::on_loginBtn_clicked()
     QNetworkReply *reply = manager->post(network_request,byteArray);
     cout << "getted reply" << endl;
     QTextCodec *codec = QTextCodec::codecForName("utf8");
-//    QString all = codec->toUnicode(reply->readAll());
-//    qDebug() << all;
+    QString all = codec->toUnicode(reply->readAll());
+    qDebug() << all;
 //    reply->deleteLater();
 //    manager->get(QNetworkRequest(QUrl("http://www.qter.org")));
 
