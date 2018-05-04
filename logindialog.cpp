@@ -93,8 +93,9 @@ void LoginDialog::replyFinished(QNetworkReply *reply)
                     }else{
                         QJsonValue token_ = object.value("token");
                         if (token_.isString()){
-                            QString token = token_.toString();
-                            qDebug() << "token : " << token;
+                            QString getToken = token_.toString();
+                            qDebug() << "token : " << getToken;
+                            token = getToken;
                             accept();
                         }else{
                             QMessageBox::warning(this, tr("Waring"),
@@ -112,7 +113,7 @@ void LoginDialog::replyFinished(QNetworkReply *reply)
 
         }
     }else {
-        qDebug() << "pase json err" <<endl;
+        qDebug() << "pase json err or no res" <<endl;
         qDebug() << jsonError.errorString() <<endl;
     }
 }

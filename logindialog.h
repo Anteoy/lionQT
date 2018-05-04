@@ -4,6 +4,8 @@
 #include <QDialog>
 #include <QtNetwork>
 
+extern QString token;
+
 namespace Ui {
 class LoginDialog;
 }

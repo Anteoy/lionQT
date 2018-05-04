@@ -2,6 +2,8 @@
 #include "logindialog.h"
 #include <QApplication>
 
+QString token = "not init";
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
