@@ -27,10 +27,16 @@ private slots:
 
     void replyFinished_pub_2(QNetworkReply *);
 
+    void on_pushButton_3_clicked();
+
+    void replyFinished_pub_3(QNetworkReply *);
+
+
 private:
     Ui::MainWindow *ui;
     QNetworkAccessManager *manager;
     QNetworkAccessManager *manager_pub_2;
+    QNetworkAccessManager *manager_pub_3;
 };
 
 #endif // MAINWINDOW_H
