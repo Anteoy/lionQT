@@ -120,8 +120,8 @@ void MainWindow::replyFinished(QNetworkReply *reply)
                         QJsonValue data = object.value("data");
                         if (data.isString()){
                             QString datastr = data.toString();
-                            qDebug() << "token : " << datastr;
-
+                            qDebug() << "data : " << datastr;
+                            ui->textEdit->setPlainText(datastr);
                         }else{
 
                         }
