@@ -143,6 +143,9 @@ void MainWindow::replyFinished(QNetworkReply *reply)
     }else {
         qDebug() << "pase json err" <<endl;
         qDebug() << jsonError.errorString() <<endl;
+        QMessageBox::warning(this, tr("Waring"),
+                              tr("请求服务时发生错误!"),
+                              QMessageBox::Yes);
     }
 }
 
@@ -228,6 +231,9 @@ void MainWindow::replyFinished_pub_2(QNetworkReply *reply)
     }else {
         qDebug() << "pase json err" <<endl;
         qDebug() << jsonError.errorString() <<endl;
+        QMessageBox::warning(this, tr("Waring"),
+                              tr("请求服务时发生错误!"),
+                              QMessageBox::Yes);
     }
 }
 
@@ -321,5 +327,8 @@ void MainWindow::replyFinished_pub_3(QNetworkReply *reply)
     }else {
         qDebug() << "pase json err" <<endl;
         qDebug() << jsonError.errorString() <<endl;
+        QMessageBox::warning(this, tr("Waring"),
+                              tr("请求服务时发生错误!"),
+                              QMessageBox::Yes);
     }
 }
