@@ -46,7 +46,7 @@ void MainWindow::on_pushButton_4_clicked()
     }
     qDebug() << ui->lineEdit->text().trimmed() << endl;
     QNetworkRequest network_request;
-    QUrl url("http://127.0.0.1:8080/get_blog");
+    QUrl url("https://www.allocmem.com/get_blog");
     QJsonObject json;
     json.insert("title", ui->lineEdit->text().trimmed());
     json.insert("token", token);
@@ -160,7 +160,7 @@ void MainWindow::on_pushButton_2_clicked()
     }
     qDebug() << ui->lineEdit->text().trimmed() << endl;
     QNetworkRequest network_request;
-    QUrl url("http://127.0.0.1:8080/delete_blog");
+    QUrl url("https://www.allocmem.com/delete_blog");
     QJsonObject json;
     json.insert("title", ui->lineEdit->text().trimmed());
     json.insert("token", token);
@@ -255,7 +255,7 @@ void MainWindow::on_pushButton_3_clicked()
     }
     qDebug() << ui->lineEdit->text().trimmed() << endl;
     QNetworkRequest network_request;
-    QUrl url("http://127.0.0.1:8080/upload");
+    QUrl url("https://www.allocmem.com/upload");
     QJsonObject json;
     json.insert("title", ui->lineEdit->text().trimmed());
     json.insert("token", token);

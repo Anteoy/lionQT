@@ -36,7 +36,7 @@ void LoginDialog::on_loginBtn_clicked()
         return;
     }
     QNetworkRequest network_request;
-    QUrl url("http://127.0.0.1:8080/loginR");
+    QUrl url("https://www.allocmem.com/loginR");
     QJsonObject json;
     json.insert("user_name", ui->usrLineEdit->text().trimmed());
     json.insert("pass_word", ui->pwdLineEdit->text());
